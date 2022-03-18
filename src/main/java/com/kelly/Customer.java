@@ -1,3 +1,5 @@
+package com.kelly;
+
 public class Customer {
     String id;
     int amount;

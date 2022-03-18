@@ -1,3 +1,5 @@
+package com.kelly;
+
 public class GoldenCustomer extends Customer  {
 
     public GoldenCustomer(String id, int amount) {
