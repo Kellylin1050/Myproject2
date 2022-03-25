@@ -1,4 +1,4 @@
-package com.kelly;
+package com.kelly.score;
 
 public class ScoringNG {
     public static void main(String[] args) {

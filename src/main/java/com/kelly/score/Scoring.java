@@ -1,4 +1,4 @@
-package com.kelly;
+package com.kelly.score;
 
 public class Scoring {
     public static void main(String[] args) {

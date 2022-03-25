@@ -1,4 +1,4 @@
-package com.kelly;
+package com.kelly.sales;
 
 public class SalesTester {
     public static void main(String[] args) {

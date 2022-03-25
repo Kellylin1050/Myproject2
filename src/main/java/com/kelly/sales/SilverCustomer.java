@@ -1,4 +1,4 @@
-package com.kelly;
+package com.kelly.sales;
 
 public class SilverCustomer extends Customer {
     int returnmoney;
