@@ -1,19 +1,19 @@
 package com.kelly.score;
 
-public class Students {
+public class Student {
     String name;
     int english;
     int math;
-    public Students(String name) { //constructor
+    public Student(String name) { //constructor
         this.name = name;
     }
-    public Students(String name,int english,int math) {//constructor
+    public Student(String name, int english, int math) {//constructor
         this(name);
         //this.name = name;
         this.english = english;
         this.math = math;
     }
-    public Students(){//Default constructor
+    public Student(){//Default constructor
     }
     public void print() {
         System.out.print

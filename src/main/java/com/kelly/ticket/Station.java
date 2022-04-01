@@ -1,4 +1,4 @@
-package com.kelly.highSpeedRail;
+package com.kelly.ticket;
 
 public class Station {
     public static final Station TAIPEI_CITY =

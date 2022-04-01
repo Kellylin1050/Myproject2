@@ -1,10 +1,10 @@
-package com.kelly.highSpeedRail;
+package com.kelly.ticket;
 
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        Ticket ticket = new Ticket(Station.TAIPEI_CITY,Station.TAICHUNG_CITY);
+        //Ticket ticket = new Ticket(Station.TAIPEI_CITY,Station.TAICHUNG_CITY);
         Scanner scanner = new Scanner(System.in);
         System.out.println("Your start station? (Taipei:1, Taichung:2, kaohsiung:3)");
         int choice = Integer.parseInt(scanner.next());
@@ -34,6 +34,7 @@ public class Test {
                 endstation = Station.KAOHSIUNG_CITY;
                 break;
         }
+        Ticket ticket = new Ticket(startstation, endstation);
         System.out.println("how many ticket do you want");
         Scanner s = new Scanner(System.in);
         int quantity = Integer.parseInt(s.next());
