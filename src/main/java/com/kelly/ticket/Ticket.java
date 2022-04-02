@@ -7,15 +7,20 @@ public class Ticket {
 
     Station start;
     Station destination;
+    Type type;
+    float price;
+    int quantity;
+    public void setQuantity(int quantity){
+        this.quantity = quantity;
+    }
+    public void setPrice(float totalprice) {
+        this.price = totalprice;
+    }
 
-    public Ticket(Station start, Station destination) {
+    public Ticket(Station start, Station destination, Type type){
         this.start = start;
         this.destination = destination;
+        this.type = type;
     }
-    Type type;
-   public Ticket(Type type){
-       this.type = type;
-   }
-
 
 }
