@@ -93,7 +93,7 @@ public class Test {
                             "\t" + "ticket:" + quantity + "\t" + "totalprice:" + totalprice);
 
             // 新增的程式碼
-            System.out.println("continue buying 0:exit,1:continue?");
+            System.out.println("continue buying : 1 , exit : 0 continue?");
             int keep_buying = Integer.parseInt(scanner.next());
             switch (keep_buying) {
                 case 0:
