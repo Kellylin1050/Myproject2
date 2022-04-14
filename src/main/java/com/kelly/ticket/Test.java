@@ -11,7 +11,6 @@ public class Test {
         boolean exit = false;
         ArrayList<Ticket> ticketList = new ArrayList();
         while (!exit) {
-            // 新增的程式碼
             Scanner scanner = new Scanner(System.in);
             System.out.println("Your start station? (Taipei:1, Taichung:2, kaohsiung:3)");
             int choice = Integer.parseInt(scanner.next());
