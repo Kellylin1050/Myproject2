@@ -14,6 +14,17 @@ public class SalesTester {
 
         for (Customer c: customers) {c.print();} //都叫c 一個一個印
 
+        Customer c = customers.get(4);
+        if (c instanceof GoldenCustomer){
+            GoldenCustomer gc = (GoldenCustomer) c;
+            System.out.println(gc.bonus);
+        }
+
+      /*  System.out.println(c instanceof SilverCustomer);
+        SilverCustomer sc = (SilverCustomer) c;
+        System.out.println(sc.getReturnmoney());
+        */
+
        /* for (int i = 0; i < 5; i++) {
             customers.get(i).print();
         }*/
