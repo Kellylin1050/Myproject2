@@ -62,20 +62,20 @@ public class Test {
                 case 4:
                     type = Type.REGULARTICKET;
             }
-            //票價
+            //票價 方法一
             float price = 0;
             if ((startstation == Station.TAIPEI_CITY && endstation == Station.TAICHUNG_CITY) || (startstation == Station.TAICHUNG_CITY && endstation == Station.TAIPEI_CITY)) {
-                price = 600;
+                price = 500;
             } else if ((startstation == Station.TAICHUNG_CITY && endstation == Station.KAOHSIUNG_CITY) || (startstation == Station.KAOHSIUNG_CITY && endstation == Station.TAICHUNG_CITY)) {
-                price = 900;
+                price = 600;
             } else if ((startstation == Station.TAIPEI_CITY && endstation == Station.KAOHSIUNG_CITY) || (startstation == Station.KAOHSIUNG_CITY && endstation == Station.TAIPEI_CITY)) {
-                price = 1500;
+                price = 1100;
             }
             if (type == Type.OLDERTICKET) {
                 price = price * 0.5f;
             }
             if (type == Type.STUDENTTICKET) {
-                price = price * 0.9f;
+                price = price * 0.8f;
             }
             if (type == Type.EARLIERTICKET) {
                 price = price * 0.7f;
