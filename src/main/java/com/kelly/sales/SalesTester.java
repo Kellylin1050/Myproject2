@@ -19,6 +19,8 @@ public class SalesTester {
             GoldenCustomer gc = (GoldenCustomer) c;
             System.out.println(gc.bonus);
         }
+        MyClass myClass = new MyClass();
+        myClass.print();
 
       /*  System.out.println(c instanceof SilverCustomer);
         SilverCustomer sc = (SilverCustomer) c;

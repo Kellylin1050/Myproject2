@@ -1,4 +1,4 @@
-package com.kelly.Test;
+package com.kelly.ui;
 
 import com.kelly.score.Student;
 

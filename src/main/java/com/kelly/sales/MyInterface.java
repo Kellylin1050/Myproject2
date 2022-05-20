@@ -1,4 +1,4 @@
-package com.kelly.Test;
+package com.kelly.sales;
 
 public interface MyInterface {
     public void print();
