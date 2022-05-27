@@ -4,34 +4,55 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 public class GuessFrame extends JFrame {
-//fields
-//constructors
-    public GuessFrame(){
+    //fields
+    JButton button = new JButton("Guess");
+    JLabel label = new JLabel("?");
+    JTextField number = new JTextField(10);
+    //constructors
+    public GuessFrame() {
         super();
-        setSize(600,400);
-        setLocation(300,200);
+        setSize(600, 400);
+        setLocation(300, 200);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        JButton button = new JButton("ok");
-        JLabel label = new JLabel("Zzzzz");
+        Random r = new Random();
+        int secret = r.nextInt(10)+1;
+        System.out.println("secret:" + secret);
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //System.out.println("hihi");
-                label.setText("hello~");
-            }
+                //label.setText("hello~");
+                int num = Integer.parseInt(number.getText());
+                System.out.println(num);
+                    if (secret > num) {
+                        label.setText("bigger");
+                    } else {
+                        if (secret < num) {
+                            label.setText("smaller");
+                        } else {
+                            label.setText("Bingo , the secret number is " + secret);
+
+                        }
+                    }
+
+                }
         });
-        label.setText("aaa");
+
+        //label.setText();
         setLayout(new FlowLayout());
-        add(label);
+        add(number);
         add(button);
+        add(label);
         setVisible(true);
     }
     //methods
     public static void main(String[] args) {
         GuessFrame guessFrame = new GuessFrame();
-        /*guessFrame.setSize(400,300);
+    }
+    /*guessFrame.setSize(400,300);
         guessFrame.setVisible(true);*/
     }
-}
+
