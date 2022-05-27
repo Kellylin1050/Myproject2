@@ -14,7 +14,7 @@ public class GuessFrame extends JFrame {
         setLocation(300,200);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         JButton button = new JButton("ok");
-        JLabel label = new JLabel("Zzzzzz");
+        JLabel label = new JLabel("Zzzzz");
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
