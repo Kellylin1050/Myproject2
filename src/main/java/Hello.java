@@ -1,5 +1,3 @@
-package com.kelly.ui;
-
 import com.kelly.score.Student;
 
 public class Hello {
